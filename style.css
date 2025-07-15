@@ -1,0 +1,118 @@
+/* Reset & base */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fff);
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: #2196f3;
+    color: white;
+    animation: slideInTop 1s ease-out;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* About Section */
+#about {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    animation: fadeIn 1.2s ease-in;
+}
+
+#about h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Work Section */
+#work {
+    padding: 2rem;
+    text-align: center;
+}
+
+#work h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.project {
+    display: inline-block;
+    margin: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+    width: 280px;
+    height: 180px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer a {
+    color: #90caf9;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
